@@ -1,0 +1,156 @@
+/************ SECTION ************/
+#nav-top {
+
+}
+
+#highlight {
+    background-color: #F1F3FF;
+}
+
+#our-service, #why-us, #testimonial, #cta-banner, #faq, #footer {
+    background-color: white;
+}
+
+
+/************ PADDING ************/
+
+.highlight-padding {
+    padding-left: 15.5%;
+    padding-right: 11%;
+}
+.our-service-padding {
+    padding: 7% 8.2%
+}
+
+.our-service-content-padding {
+    padding: 10% 14%;
+}
+
+.our-service-list {
+    margin-top: 10px;
+}
+
+.why-us-padding {
+    padding: 2% 7.5%;
+}
+
+.why-us-content-padding {
+    padding: 16px 0px;
+}
+
+.testimonial-padding {
+    padding: 3% 27%;
+}
+
+.cta-padding {
+    padding: 3% 1%;
+}
+
+.faq-padding {
+    padding: 5% 1%;
+}
+
+.footer-padding {
+    padding: 5% 6%;
+}
+
+
+/************* FONT **************/
+.nav-text {
+    padding: 10px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.hero-title {
+    padding-top: 177px;
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.text-title {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    margin-bottom: 16px;
+
+}
+
+.text-subtitle {
+
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.ul {
+    list-style-image: url(img/icon_list.png);
+}
+
+.cta-title {
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+
+/************** ITEM **************/
+.button {
+    background: #5CB85F;
+    border-radius: 2px;
+    padding: 8px 12px;
+    border: 0px;
+    color: white;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hero-img {
+    margin-top: 92px;
+    float: right;
+}
+
+.why-us-icon {
+    width: 32px;
+    height: auto;
+}
+
+.testimonial-card {
+    width: 619px;
+    height: auto;
+
+}
+
+.testimonial-photo {
+    width: 80px;
+    height: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    display: block;
+}
+
+.cta-banner-properties {
+    width: 100%;
+    background: #0D28A6;
+    border: 0px;
+    border-radius: 13px;
+}
+
+.icon-footer {
+    width: 32px;
+    height: auto;
+    margin-right: 16px;
+}
