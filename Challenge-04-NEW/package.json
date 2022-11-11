@@ -1,0 +1,16 @@
+{
+  "name": "challenge-04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-modules": "^1.0.1",
+    "node-static": "^0.7.11",
+    "nodemon": "^2.0.20"
+  }
+}

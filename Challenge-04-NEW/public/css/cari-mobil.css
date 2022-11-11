@@ -1,0 +1,45 @@
+#highlight-cars {
+    background-color: white;
+    height: auto;
+}
+
+.search-rectangle{
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.car-img{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+.button {
+    background: #5CB85F;
+    border-radius: 2px;
+    padding: 8px 12px;
+    border: 0px;
+    color: white;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.button:hover{
+    background: #4da050;
+}
+
+.parent{ 
+    width: 468px; 
+    background-color: red; 
+    margin: 0 auto; }
+
+.child{
+  background: blue;
+  margin-left: -300vw;
+  padding-left: 300vw;
+  margin-right: -300vw;
+  padding-right: 300vw;
+}
+
