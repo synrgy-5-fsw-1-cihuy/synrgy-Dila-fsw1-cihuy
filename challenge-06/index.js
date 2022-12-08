@@ -37,7 +37,9 @@ const options = {
         },
       ],
     },
-    apis: [ "./routers/users.router.js"],
+    apis: [ "./routers/users.router.js",
+            "./routers/cars.router.js"
+    ],
 };
   
 const specs = swaggerJsDoc(options);

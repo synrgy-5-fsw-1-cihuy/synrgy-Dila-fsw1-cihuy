@@ -1,9 +1,6 @@
 
 'use strict'
 
-const models = require('../models');
-const userModel = models.User;
-
 const userServices = require('../services/users.services');
 
 const jwtTokenUtil = require('../util/jwt_util');
@@ -29,7 +26,7 @@ controller.registerUserMember = async (req, res) => {
 
         }
 
-        await userModel.create(data).catch((err) => {
+        await userServices.createUser(data).catch((err) => {
             console.log(err)
             res.end(err)
             return
@@ -71,11 +68,12 @@ controller.registerUserAdmin = async (req, res) => {
 
         }
 
-        await userModel.create(data).catch((err) => {
+        await userServices.createUser(data).catch((err) => {
             console.log(err)
             res.end(err)
             return
         })
+
         return res.status(201).json({
             message: "User Admin successfully created!",
             data: {

@@ -1,11 +1,13 @@
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
+const {expressjwt: jwt} = require("express-jwt")
+const {JWT_ALGORITHM = HS256} = process.env;
 const dotenv = require('dotenv');
 const userServices = require('../services/users.services')
 dotenv.config();
 const exportModule = {};
 exportModule.checkUser = (role) => {
     return async (req, res, next) => {
-        await jwt({ secret: process.env.TOKEN_SECRET})(req, res, async () => {
+        await jwt({ secret: process.env.TOKEN_SECRET, algorithms: [JWT_ALGORITHM]})(req, res, async () => {
             if (req.auth === undefined) return res.status(401).json({ "error": "Unauthorized access" })
             if (req.auth.id === undefined) return res.status(401).json({ "error": "Unauthorized access" })
             if (req.auth.email === undefined) return res.status(401).json({ "error": "Unauthorized access" })
@@ -29,7 +31,7 @@ exportModule.checkUser = (role) => {
                     break;
 
                 case 'admin':
-                    if(currentUser.role != "superadmin" || currentUser.role != "admin") return res.status(401).json({ "error": "Unauthorized access" })
+                    if(currentUser.role != "superadmin" && currentUser.role != "admin") return res.status(401).json({ "error": "Unauthorized access" })
                     break;
                     
                 default:
