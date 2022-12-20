@@ -182,10 +182,10 @@ const LandingPage = () => {
                                 </div>
                             </div>
                             <div className="d-flex justify-content-center">
-                                <a className="p-2 py-3" href="#carouselExampleIndicators" role="button" dataSlide="prev">
+                                <a className="p-2 py-3" href="#carouselExampleIndicators" role="button" >
                                     <button className={styles.leftButton}></button>
                                 </a>
-                                <a className="p-2 py-3" href="#carouselExampleIndicators" role="button" dataSlide="next">
+                                <a className="p-2 py-3" href="#carouselExampleIndicators" role="button" >
                                     <button className={styles.rightButton}></button>
                                 </a>
                             </div>
