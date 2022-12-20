@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer"
 import Search from "./components/Search/search";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Cards from "./components/Cards/Cards";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Router>
         <Routes>
             <Route path="/" element={<><NavbarBCR/><JumbotronBCR /><LandingPage /><Footer/></>}/>
-            <Route path="/cars" element={<><NavbarBCR/><JumbotronBCR /><Search /><Footer/></>}/>
+            <Route path="/cars" element={<><NavbarBCR/><JumbotronBCR /><Search /> <Cards /><Footer/></>}/>
         </Routes>
       </Router>
       
