@@ -26,7 +26,7 @@ module.exports = {
   production: {
     username: PGUSER,
     password: PGPASSWORD,
-    database: `${PGDATABASE}_production`,
+    database: PGDATABASE,
     host: PGHOST,
     port: PGPORT,
     dialect: "postgres"
